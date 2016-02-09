@@ -6,6 +6,9 @@
 fd = open('/etc/passwd', 'r')
 
 lineas = fd.readlines()
+
+fd.close()
+
 dicc = {}
 
 for linea in lineas:
@@ -22,4 +25,4 @@ try:
 except:
     print "No existe ese usuario"   
 
-fd.close()
+
